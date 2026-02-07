@@ -16,7 +16,8 @@ const CounsellorDashboard = () => {
     };
   
 
-  const getlist = async () => {
+  useEffect(() => {
+     const getlist = async () => {
     try {
       const res = await axios.get("https://mental-health-hf3c.onrender.com/api/v1/counsellor");
       const datas = res.data.counsellors;
@@ -26,9 +27,6 @@ const CounsellorDashboard = () => {
       console.log(err);
     }
   };
-
-  useEffect(() => {
-    getlist();
   }, [mails]);
 
   return (
