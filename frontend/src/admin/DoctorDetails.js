@@ -27,6 +27,7 @@ const findappointment = async () => {
   }
 
   setLoaded(true);
+  console.log(loaded)
 };
 
 

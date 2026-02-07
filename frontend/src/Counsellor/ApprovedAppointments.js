@@ -24,7 +24,7 @@ const dataa=approve.data.approved
 console.log(dataa)
 
 const filtered=dataa.filter((p)=>{
-   return p.counsellorId.email==email
+   return p.counsellorId.email===email
 })
 console.log(filtered)
 setLists(filtered)
@@ -32,9 +32,7 @@ setLists(filtered)
 
     useEffect(()=>{
         got();
-    },[])
-
-
+    },[got])
   return (
    <div className="wholecard">
      <div className="navcontent">

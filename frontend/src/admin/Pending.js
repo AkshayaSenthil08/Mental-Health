@@ -27,6 +27,7 @@ console.log(result)
         {status}
     )
     setResult(prev=>prev.filter(item=>item._id!==id))
+    console.log(dataa)
     
   }
   useEffect(() => {
