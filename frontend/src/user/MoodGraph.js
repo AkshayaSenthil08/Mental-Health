@@ -8,8 +8,6 @@ import{
   PointElement,
   Tooltip,
   Legend,
-  plugins,
-  scales
 } from 'chart.js'
 
 chartJS.register(

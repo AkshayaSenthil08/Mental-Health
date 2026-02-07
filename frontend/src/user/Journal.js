@@ -50,7 +50,7 @@ const Journal = () => {
     <div className="journal-page">
 
       <div className="hero-card">
-        <img src="https://images.unsplash.com/photo-1527137342181-19aab11a8ee8" />
+        <img src="https://images.unsplash.com/photo-1527137342181-19aab11a8ee8"  alt="hero"/>
         <div className="hero-overlay">
           <h1>MENTAL HEALTH JOURNAL</h1>
         </div>
