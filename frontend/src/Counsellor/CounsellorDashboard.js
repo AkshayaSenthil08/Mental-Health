@@ -27,6 +27,9 @@ const CounsellorDashboard = () => {
       console.log(err);
     }
   };
+   
+  getlist()
+
   }, [mails]);
 
   return (
