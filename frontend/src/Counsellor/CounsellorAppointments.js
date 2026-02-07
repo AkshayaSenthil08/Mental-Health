@@ -16,7 +16,9 @@ const CounsellorAppointments = () => {
     };
   
 
-  const gets = async () => {
+  useEffect(() => {
+
+   const gets = async () => {
     const res = await axios.get("https://mental-health-hf3c.onrender.com/api/v1/pending");
     const dataa = res.data.pending;
 
@@ -30,7 +32,6 @@ const CounsellorAppointments = () => {
     console.log(selected)
   };
 
-  useEffect(() => {
     gets();
   }, [email]);
 

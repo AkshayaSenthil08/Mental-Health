@@ -18,19 +18,21 @@ const ApprovedAppointments = () => {
      const email = localStorage.getItem("email");
      console.log(email)
 
-    const got=async()=>{
-const approve=await axios.get(`https://mental-health-hf3c.onrender.com/api/v1/getapprove`)
-const dataa=approve.data.approved
-console.log(dataa)
-
-const filtered=dataa.filter((p)=>{
-   return p.counsellorId.email===email
-})
-console.log(filtered)
-setLists(filtered)
-    }
-
     useEffect(()=>{
+
+        const got=async()=>{
+    const approve=await axios.get(`https://mental-health-hf3c.onrender.com/api/v1/getapprove`)
+    const dataa=approve.data.approved
+    console.log(dataa)
+
+      const filtered=dataa.filter((p)=>{
+        return p.counsellorId.email===email
+      })
+      console.log(filtered)
+      setLists(filtered)
+      }
+
+
         got();
     },[email])
   return (
