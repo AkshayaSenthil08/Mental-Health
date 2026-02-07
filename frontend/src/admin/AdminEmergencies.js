@@ -9,7 +9,7 @@ const AdminEmergencies = () => {
   const fetchEmergencies = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/v1/emergency",
+        "https://mental-health-hf3c.onrender.com/api/v1/emergency",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -29,7 +29,7 @@ const AdminEmergencies = () => {
   const markResolved = async (id) => {
     try {
       await axios.put(
-        `http://localhost:5000/api/v1/emergency/${id}`,
+        `https://mental-health-hf3c.onrender.com/api/v1/emergency/${id}`,
         {},
         {
           headers: {

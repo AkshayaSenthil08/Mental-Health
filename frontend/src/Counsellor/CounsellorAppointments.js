@@ -17,7 +17,7 @@ const CounsellorAppointments = () => {
   
 
   const gets = async () => {
-    const res = await axios.get("http://localhost:5000/api/v1/pending");
+    const res = await axios.get("https://mental-health-hf3c.onrender.com/api/v1/pending");
     const dataa = res.data.pending;
 
     const selected = dataa.filter(

@@ -3,8 +3,7 @@ import {
   FiSmile,
   FiBook,
   FiVideo,
-  FiUser,
-  FiAlertCircle,
+  FiUser
 } from "react-icons/fi";
 import { FiCalendar } from "react-icons/fi";
 
@@ -41,6 +40,7 @@ const actions = [
     path: "/getappoint",
     danger: true,
   },
+
 ];
 
 const Dashboard = () => {

@@ -14,7 +14,7 @@ const EditUser = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/v1/user/${id}`)
+      .get(`https://mental-health-hf3c.onrender.com/api/v1/user/${id}`)
       .then(res => {
         setForm({
           name: res.data.user.name,
@@ -34,7 +34,7 @@ const EditUser = () => {
 
     try {
       await axios.put(
-        `http://localhost:5000/api/v1/updates/${id}`,
+        `https://mental-health-hf3c.onrender.com/api/v1/updates/${id}`,
         form
       );
 

@@ -1,7 +1,6 @@
 import React from 'react'
 import ActivityChart from './ActivityChart'
 import MoodChart from './MoodChart'
-import ReportSummary from './ReportSummary'
 import SleepChart from './SleepChart'
 
 const Reports = () => {

@@ -18,7 +18,7 @@ const CounsellorDashboard = () => {
 
   const getlist = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/v1/counsellor");
+      const res = await axios.get("https://mental-health-hf3c.onrender.com/api/v1/counsellor");
       const datas = res.data.counsellors;
       const selected = datas.filter((p) => p.email === mails);
       setDocData(selected);

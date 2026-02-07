@@ -31,10 +31,7 @@ const AdminDashboard = () => {
 />
   </div>
    
- 
-
 </div>
-
 
       <div className="admin-content">
 <h1 className="outline-title">Welcome Admin</h1>

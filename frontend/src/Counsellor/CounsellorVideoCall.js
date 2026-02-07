@@ -25,7 +25,6 @@ const CounsellorVideoCall = () => {
 
   return (
     <>
-      {/* NAVBAR */}
       <div className="navcontent">
         <div className={`navbar ${open ? "slide-in" : "slide-out"}`}>
           <Link to="/counsellordashboard"><p>Home</p></Link>
@@ -42,14 +41,13 @@ const CounsellorVideoCall = () => {
         </div>
       </div>
 
-      {/* VIDEO PAGE */}
       <div className="video-pages">
         {!room ? (
           <div className="form_main">
             <p className="heading">Start Session</p>
 
             <p className="login-note">
-              🔐 <b>Please log in before starting the session</b><br />
+               <b>Please log in before starting the session</b><br />
               Login (Google / GitHub) is required to become the moderator.
             </p>
 
@@ -65,7 +63,7 @@ const CounsellorVideoCall = () => {
             <p>Share this Room ID with user</p>
 
             <p className="login-note">
-              🔐 <b>Important:</b> Please log in inside the call window
+              <b>Important:</b> Please log in inside the call window
               to start the session as moderator.
             </p>
 

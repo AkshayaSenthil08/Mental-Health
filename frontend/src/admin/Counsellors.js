@@ -16,7 +16,7 @@ const Counsellors = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/v1/counsellor")
+      .get("https://mental-health-hf3c.onrender.com/v1/counsellor")
       .then((res) => setData(res.data.counsellors))
       .catch((err) => console.log(err));
   }, []);

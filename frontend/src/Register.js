@@ -36,7 +36,7 @@ const Register = () => {
     setLoading(true);
 
     axios
-      .post("http://localhost:5000/api/v1/register", formData)
+      .post("https://mental-health-hf3c.onrender.com/api/v1/register", formData)
       .then((res) => {
         if (res.data.success) {
           alert("Registered successfully");

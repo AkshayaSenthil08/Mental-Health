@@ -17,7 +17,7 @@ const Emergency = () => {
 
     try {
       const resp = await axios.post(
-        "http://localhost:5000/api/v1/emergency",
+        "https://mental-health-hf3c.onrender.com/api/v1/emergency",
         {
           message,
           type,

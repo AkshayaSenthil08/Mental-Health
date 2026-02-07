@@ -20,7 +20,7 @@ const Attenders = () => {
   }, []);
 
   const fetchUsers = async () => {
-    const res = await axios.get("http://localhost:5000/api/v1/getusers");
+    const res = await axios.get("https://mental-health-hf3c.onrender.com/api/v1/getusers");
     setUsers(res.data.users);
   };
 
@@ -30,7 +30,7 @@ navigate(`/edit-user/${id}`)
   }
   const handleRemove = async (id) => {
     if (!window.confirm("Delete this user?")) return;
-    await axios.delete(`http://localhost:5000/api/v1/deletes/${id}`);
+    await axios.delete(`https://mental-health-hf3c.onrender.com/api/v1/deletes/${id}`);
     fetchUsers();
     console.log("hello")
   };

@@ -11,13 +11,13 @@ const DoctorDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/v1/doctor/${id}`)
+      .get(`https://mental-health-hf3c.onrender.com/v1/doctor/${id}`)
       .then((res) => setDoc(res.data.counsellor));
   }, [id]);
 
 const findappointment = async () => {
   const res = await axios.get(
-    `http://localhost:5000/api/v1/docappoint/${id}`
+    `https://mental-health-hf3c.onrender.com/api/v1/docappoint/${id}`
   );
 
   if (res.data.appointments.length === 0) {
@@ -44,7 +44,7 @@ const findappointment = async () => {
           <h2>Experience:  <span>{doc.experience} </span></h2>
           <h2>Mobile:  <span>{doc.phone}</span></h2>
           <h2>Email:  <span>{doc.email}</span></h2>
-<button class="btn-12" onClick={findappointment}><span>Get Appointments</span></button>
+       <button class="btn-12" onClick={findappointment}><span>Get Appointments</span></button>
         </div>
       </div>
     </div>

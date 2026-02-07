@@ -17,13 +17,13 @@ const Pending = () => {
     };
 
   const fetchPending = async () => {
-    const res = await axios.get("http://localhost:5000/api/v1/pending");
+    const res = await axios.get("https://mental-health-hf3c.onrender.com/api/v1/pending");
     setResult(res.data.pending);
   };
 console.log(result)
   const updateStatus=async(id,status)=>{
    const dataa= await axios.put(
-        `http://localhost:5000/api/v1/update/${id}`,
+        `https://mental-health-hf3c.onrender.com/api/v1/update/${id}`,
         {status}
     )
     setResult(prev=>prev.filter(item=>item._id!==id))

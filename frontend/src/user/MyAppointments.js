@@ -7,12 +7,12 @@ const MyAppointments = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/v1/getappointment/${userId}`)
+      .get(`https://mental-health-hf3c.onrender.com/api/v1/getappointment/${userId}`)
       .then((res) => setData(res.data.appointments))
   }, [userId])
 
  const cancel=async(id)=>{
-  await axios.delete(`http://localhost:5000/api/v1/cancelappointment/${id}`)
+  await axios.delete(`https://mental-health-hf3c.onrender.com/api/v1/cancelappointment/${id}`)
 
   
   setData((prev)=>(

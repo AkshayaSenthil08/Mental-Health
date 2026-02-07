@@ -11,7 +11,7 @@ const CounsellorDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/v1/counsellor/${id}`)
+      .get(`https://mental-health-hf3c.onrender.com/api/v1/counsellor/${id}`)
       .then((res) => setData(res.data.counsellor))
       .catch((err) => console.log(err))
   }, [id])
@@ -22,7 +22,7 @@ const CounsellorDetails = () => {
     console.log("ROOM ID:", roomId);
 
   const res = await axios.post(
-    "http://localhost:5000/api/v1/appointment",
+    "https://mental-health-hf3c.onrender.com/api/v1/appointment",
     {
       userId: localStorage.getItem("userId"),
       counsellorId: id,

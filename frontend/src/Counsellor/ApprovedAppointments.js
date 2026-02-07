@@ -19,7 +19,7 @@ const ApprovedAppointments = () => {
      console.log(email)
 
     const got=async()=>{
-const approve=await axios.get(`http://localhost:5000/api/v1/getapprove`)
+const approve=await axios.get(`https://mental-health-hf3c.onrender.com/api/v1/getapprove`)
 const dataa=approve.data.approved
 console.log(dataa)
 

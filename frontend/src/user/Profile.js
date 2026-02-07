@@ -7,7 +7,7 @@ const Profile = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/v1/profile");
+        const res = await axios.get("https://mental-health-hf3c.onrender.com/api/v1/profile");
         setUser(res.data.userfetch[0]);
       } catch (err) {
         console.log(err);
