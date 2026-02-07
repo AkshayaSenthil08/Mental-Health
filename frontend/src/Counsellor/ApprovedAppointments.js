@@ -32,7 +32,7 @@ setLists(filtered)
 
     useEffect(()=>{
         got();
-    },[got])
+    },[email])
   return (
    <div className="wholecard">
      <div className="navcontent">

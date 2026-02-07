@@ -29,7 +29,7 @@ const CounsellorDashboard = () => {
 
   useEffect(() => {
     getlist();
-  }, []);
+  }, [mails]);
 
   return (
     <div className="dashboard-container">

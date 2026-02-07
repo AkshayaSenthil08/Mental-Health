@@ -32,7 +32,7 @@ const CounsellorAppointments = () => {
 
   useEffect(() => {
     gets();
-  }, []);
+  }, [email]);
 
 return (
   <>
